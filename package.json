@@ -1,0 +1,22 @@
+{
+  "name": "wiki-test",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "dev:setup:submodules": "git submodule update --init",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.9.3",
+    "@astrojs/starlight": "0.26.2",
+    "@lorenzo_lewis/starlight-utils": "^0.1.2",
+    "astro": "4.15.4",
+    "sharp": "^0.32.6",
+    "starlight-blog": "^0.12.0",
+    "typescript": "^5.5.4"
+  }
+}
