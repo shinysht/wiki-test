@@ -1,0 +1,14 @@
+---
+import type { Props } from '@astrojs/starlight/props';
+import StarlightUtilsSidebar from '@lorenzo_lewis/starlight-utils/components/Sidebar.astro';
+import StarlightBlogSidebar from "starlight-blog/overrides/Sidebar.astro";
+
+const isBlog = Astro.props.slug.startsWith('blog')
+---
+<div>
+    {!isBlog ? (
+        <StarlightUtilsSidebar {...Astro.props}><slot /></StarlightUtilsSidebar>
+      ) : (
+        <StarlightBlogSidebar {...Astro.props}><slot /></StarlightBlogSidebar>
+      )}
+</div>
